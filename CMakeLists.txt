@@ -29,7 +29,10 @@ project(${CMAKE_PROJECT_NAME})
 message("Build type: " ${CMAKE_BUILD_TYPE})
 
 # Enable CMake support for ASM and C languages
-enable_language(C ASM)
+enable_language(C CXX ASM)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Create an executable object type
 add_executable(${CMAKE_PROJECT_NAME})
@@ -45,11 +48,16 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
+    Core/Src/Packet.cpp
+    Core/Src/CheckSum.c
+    Core/Src/uart.c
+    Core/Src/utility.c
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
+    Core/Inc
 )
 
 # Add project symbols (macros)
@@ -63,6 +71,14 @@ list(REMOVE_ITEM CMAKE_C_IMPLICIT_LINK_LIBRARIES ob)
 # Add linked libraries
 target_link_libraries(${CMAKE_PROJECT_NAME}
     stm32cubemx
+    stdc++_nano
+    supc++
+    c_nano
+    g_nano
+    stdc++
+    c
+    m
 
     # Add user defined libraries
 )
+

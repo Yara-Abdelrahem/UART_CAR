@@ -1,21 +1,25 @@
 #include "uart.h"
-#include "Packet.hpp"
+#include <stdio.h>
+#include <string.h>
+#include <stdarg.h>
 
-volatile uint8_t rxBuffer[sizeof(Packet)];
-volatile uint8_t rxIndex = 0;
-volatile uint8_t packetReceivedFlag = 0;
+static UART_HandleTypeDef *log_uart = NULL;
+#define HAL_MAX_DELAY      0xFFFFFFFFU
 
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
-    if (huart->Instance == USART2) {
-        rxIndex++;
-        if (rxIndex >= sizeof(Packet)) {
-            rxIndex = 0;
-            packetReceivedFlag = 1;
-        }
-        HAL_UART_Receive_IT(&huart2, (uint8_t*)&rxBuffer[rxIndex], 1);
-    }
+
+void uart_log_init(UART_HandleTypeDef *huart) { log_uart = huart; }
+
+void uart_log_send(const char *data, uint16_t len) {
+    if (log_uart == NULL) return;
+    HAL_UART_Transmit(log_uart, (uint8_t *)data, len, HAL_MAX_DELAY);
 }
 
-void uart2_send_bytes(uint8_t *data, uint16_t size) {
-    HAL_UART_Transmit(&huart2, data, size, HAL_MAX_DELAY);
+void uart_log_printf(const char *fmt, ...) {
+    if (log_uart == NULL) return;
+    char buffer[128];
+    va_list args;
+    va_start(args, fmt);
+    vsnprintf(buffer, sizeof(buffer), fmt, args);
+    va_end(args);
+    uart_log_send(buffer, (uint16_t)strlen(buffer));
 }

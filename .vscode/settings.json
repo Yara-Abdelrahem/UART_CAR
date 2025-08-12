@@ -9,6 +9,13 @@
     ],
     "files.associations": {
         "*.conf": "bitbake",
-        "*.inc": "bitbake"
+        "*.inc": "bitbake",
+        "main.h": "c",
+        "packet.hpp": "c",
+        "ostream": "cpp",
+        "checksum.h": "c",
+        "uart.h": "c",
+        "stddef.h": "c",
+        "stdarg.h": "c"
     }
 }
