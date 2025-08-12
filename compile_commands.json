@@ -1,0 +1,128 @@
+[
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -o CMakeFiles/UART_CAR.dir/Core/Src/main.c.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Core/Src/main.c",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Core/Src/main.c",
+  "output": "CMakeFiles/UART_CAR.dir/Core/Src/main.c.o"
+},
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -o CMakeFiles/UART_CAR.dir/Core/Src/stm32f4xx_it.c.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Core/Src/stm32f4xx_it.c",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Core/Src/stm32f4xx_it.c",
+  "output": "CMakeFiles/UART_CAR.dir/Core/Src/stm32f4xx_it.c.o"
+},
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -o CMakeFiles/UART_CAR.dir/Core/Src/stm32f4xx_hal_msp.c.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Core/Src/stm32f4xx_hal_msp.c",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Core/Src/stm32f4xx_hal_msp.c",
+  "output": "CMakeFiles/UART_CAR.dir/Core/Src/stm32f4xx_hal_msp.c.o"
+},
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -o CMakeFiles/UART_CAR.dir/Core/Src/sysmem.c.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Core/Src/sysmem.c",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Core/Src/sysmem.c",
+  "output": "CMakeFiles/UART_CAR.dir/Core/Src/sysmem.c.o"
+},
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -o CMakeFiles/UART_CAR.dir/Core/Src/syscalls.c.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Core/Src/syscalls.c",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Core/Src/syscalls.c",
+  "output": "CMakeFiles/UART_CAR.dir/Core/Src/syscalls.c.o"
+},
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -o CMakeFiles/UART_CAR.dir/startup_stm32f401xc.s.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/startup_stm32f401xc.s",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/startup_stm32f401xc.s",
+  "output": "CMakeFiles/UART_CAR.dir/startup_stm32f401xc.s.o"
+},
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -o cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Core/Src/system_stm32f4xx.c",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Core/Src/system_stm32f4xx.c",
+  "output": "cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.o"
+},
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -o cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c",
+  "output": "cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.o"
+},
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -o cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c",
+  "output": "cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.o"
+},
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -o cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c",
+  "output": "cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.o"
+},
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -o cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c",
+  "output": "cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.o"
+},
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -o cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c",
+  "output": "cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.o"
+},
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -o cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c",
+  "output": "cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.o"
+},
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -o cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c",
+  "output": "cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.o"
+},
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -o cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c",
+  "output": "cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.o"
+},
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -o cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c",
+  "output": "cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.o"
+},
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -o cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c",
+  "output": "cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.o"
+},
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -o cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c",
+  "output": "cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.o"
+},
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -o cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c",
+  "output": "cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.o"
+},
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -o cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c",
+  "output": "cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.o"
+},
+{
+  "directory": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR",
+  "command": "/usr/bin/cc -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Core/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -o cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.o -c /media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c",
+  "file": "/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c",
+  "output": "cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.o"
+}
+]

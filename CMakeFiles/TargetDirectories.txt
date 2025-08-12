@@ -1,0 +1,6 @@
+/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/CMakeFiles/UART_CAR.dir
+/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/CMakeFiles/edit_cache.dir
+/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/CMakeFiles/rebuild_cache.dir
+/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+/media/yara/Volume1/Old_D/ITIEmbedded/Quadroid/UART_CAR/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
