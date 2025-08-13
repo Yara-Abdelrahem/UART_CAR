@@ -63,7 +63,7 @@ uint8_t SerializePacket(const Packet packet) {
             break;
 
         case MotorAngle_ID: 
-            MotorAngel motorAngle;
+            MotorAngle motorAngle;
             motorAngle.ID = packet.payload[0];
             motorAngle.angle = packet.payload[1];
             motorAngle.direction = packet.payload[2];
@@ -85,7 +85,7 @@ uint8_t SerializePacket(const Packet packet) {
         
 
         case CarConfirmation_ID: 
-            CorConfirmation carConfirmation;
+            CarConfirmation carConfirmation;
             carConfirmation.ID = packet.payload[0];
             carConfirmation.confirmationStatus = packet.payload[1];
             carConfirmation.value = packet.payload[2];

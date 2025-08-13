@@ -51,7 +51,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     Core/Src/Packet.cpp
     Core/Src/CheckSum.c
     Core/Src/uart.c
-    Core/Src/utility.c
+    Core/Src/Utility.c
 )
 
 # Add include paths

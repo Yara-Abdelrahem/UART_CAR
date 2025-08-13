@@ -16,6 +16,8 @@
         "checksum.h": "c",
         "uart.h": "c",
         "stddef.h": "c",
-        "stdarg.h": "c"
+        "stdarg.h": "c",
+        "iostream": "cpp",
+        "cstring": "cpp"
     }
 }

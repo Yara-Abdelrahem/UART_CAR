@@ -1,3 +1,8 @@
+#include <stdint.h>   // for uint8_t
+#include <stddef.h>   // for size_t
+#include <stdbool.h>  // for bool, true, false
+#include <string.h>   // for strlen, memcpy, etc.
+#include <stdio.h>    // for snprintf, printf
 
 int UTIL_atoi(const char *snum)
 {

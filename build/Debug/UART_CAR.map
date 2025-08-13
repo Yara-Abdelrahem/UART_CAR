@@ -6,6 +6,8 @@ Archive member included to satisfy reference by file (symbol)
                               /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-exit.o) (__stdio_exit_handler)
 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-fwalk.o)
                               /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-findfp.o) (_fwalk_sglue)
+/opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-snprintf.o)
+                              CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj (snprintf)
 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-stdio.o)
                               /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-findfp.o) (__sread)
 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-vsnprintf.o)
@@ -17,7 +19,7 @@ Archive member included to satisfy reference by file (symbol)
 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-reent.o)
                               /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-closer.o) (errno)
 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-impure.o)
-                              /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-vsnprintf.o) (_impure_ptr)
+                              /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-snprintf.o) (_impure_ptr)
 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-lseekr.o)
                               /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-stdio.o) (_lseek_r)
 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-readr.o)
@@ -39,7 +41,7 @@ Archive member included to satisfy reference by file (symbol)
 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-mlock.o)
                               /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-freer.o) (__malloc_lock)
 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-nano-svfprintf.o)
-                              /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-vsnprintf.o) (_svfprintf_r)
+                              /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-snprintf.o) (_svfprintf_r)
 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-nano-vfprintf_i.o)
                               /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-nano-svfprintf.o) (_printf_i)
 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-fflush.o)
@@ -2340,6 +2342,99 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
  .debug_macro   0x00000000       0x3c CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
  .debug_macro   0x00000000       0x20 CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .text          0x00000000        0x0 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .data          0x00000000        0x0 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .rodata        0x00000000       0xae CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .text.UTIL_atoi
+                0x00000000       0x98 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .text.UTIL_convertStrToHexByte
+                0x00000000       0x90 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .text.convert_to_hex_string
+                0x00000000       0x50 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .text.charToUpper
+                0x00000000       0x2e CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .text.strToUpper
+                0x00000000       0x58 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .text.charToLower
+                0x00000000       0x2e CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .text.strToLower
+                0x00000000       0x5c CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .text.isStrStartsWith
+                0x00000000       0x6c CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .text.isCmdEndsWithHash
+                0x00000000       0x34 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .text.deleteEndHash
+                0x00000000       0x48 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_info    0x00000000      0x3c5 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_abbrev  0x00000000      0x196 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_aranges
+                0x00000000       0x68 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_rnglists
+                0x00000000       0x4b CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000      0x168 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000      0xad8 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x8e CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x51 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000      0x103 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x6a CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000      0x1df CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000      0x190 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x74 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x2a CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x3c CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x34 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000      0x370 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x16 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x4a CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x34 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x10 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x58 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000      0x1e5 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x10 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x3c CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x20 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x1c CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x10 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x1c CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000       0x16 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_macro   0x00000000      0x170 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_line    0x00000000      0x57c CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_str     0x00000000     0x7508 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .comment       0x00000000       0x44 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .debug_frame   0x00000000      0x18c CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
  .text          0x00000000        0x0 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-exit.o)
  .data          0x00000000        0x0 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-exit.o)
  .bss           0x00000000        0x0 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-exit.o)
@@ -2382,6 +2477,16 @@ Discarded input sections
  .debug_frame   0x00000000       0x34 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-fwalk.o)
  .ARM.attributes
                 0x00000000       0x34 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-fwalk.o)
+ .text          0x00000000        0x0 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-snprintf.o)
+ .data          0x00000000        0x0 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-snprintf.o)
+ .bss           0x00000000        0x0 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-snprintf.o)
+ .text._snprintf_r
+                0x00000000       0x64 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-snprintf.o)
+ .text.snprintf
+                0x00000000       0x6c /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-snprintf.o)
+ .debug_frame   0x00000000       0x7c /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-snprintf.o)
+ .ARM.attributes
+                0x00000000       0x34 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-snprintf.o)
  .text          0x00000000        0x0 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-stdio.o)
  .data          0x00000000        0x0 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-stdio.o)
  .bss           0x00000000        0x0 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-stdio.o)
@@ -2585,6 +2690,7 @@ LOAD CMakeFiles/UART_CAR.dir/startup_stm32f401xc.s.obj
 LOAD CMakeFiles/UART_CAR.dir/Core/Src/Packet.cpp.obj
 LOAD CMakeFiles/UART_CAR.dir/Core/Src/CheckSum.c.obj
 LOAD CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
+LOAD CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
 LOAD /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a
 LOAD /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libsupc++_nano.a
 LOAD /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
@@ -3274,7 +3380,7 @@ LOAD linker stubs
  .comment       0x00000043       0x44 CMakeFiles/UART_CAR.dir/Core/Src/CheckSum.c.obj
  .comment       0x00000043       0x44 CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
 
-.debug_info     0x00000000     0xb1e2
+.debug_info     0x00000000     0xb1ef
  .debug_info    0x00000000      0x53e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_info    0x0000053e     0x2f56 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
  .debug_info    0x00003494      0x905 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
@@ -3287,9 +3393,9 @@ LOAD linker stubs
  .debug_info    0x00007751      0xb2b CMakeFiles/UART_CAR.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  .debug_info    0x0000827c      0x168 CMakeFiles/UART_CAR.dir/Core/Src/sysmem.c.obj
  .debug_info    0x000083e4       0x30 CMakeFiles/UART_CAR.dir/startup_stm32f401xc.s.obj
- .debug_info    0x00008414     0x29e2 CMakeFiles/UART_CAR.dir/Core/Src/Packet.cpp.obj
- .debug_info    0x0000adf6      0x1ca CMakeFiles/UART_CAR.dir/Core/Src/CheckSum.c.obj
- .debug_info    0x0000afc0      0x222 CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
+ .debug_info    0x00008414     0x29ef CMakeFiles/UART_CAR.dir/Core/Src/Packet.cpp.obj
+ .debug_info    0x0000ae03      0x1ca CMakeFiles/UART_CAR.dir/Core/Src/CheckSum.c.obj
+ .debug_info    0x0000afcd      0x222 CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
 
 .debug_abbrev   0x00000000     0x1f49
  .debug_abbrev  0x00000000      0x11a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj

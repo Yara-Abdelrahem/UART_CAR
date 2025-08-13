@@ -31,7 +31,7 @@ struct Motor {
     uint8_t speed;
     uint8_t direction;
 };
-struct MotorAngel {
+struct MotorAngle {
     uint8_t ID;
     uint8_t angle;
     uint8_t direction;
@@ -44,8 +44,9 @@ struct CarLight {
     uint8_t ID;
     uint8_t lightStatus;
 };
-struct CorConfirmation {
+struct CarConfirmation {
     uint8_t ID;
+    uint8_t packetID;
     uint8_t confirmationStatus;
     uint8_t value;
 };
