@@ -1,20 +1,25 @@
 // inc/Packet.hpp
 
-#ifndef PACKET_HPP
-#define PACKET_HPP
+#ifndef PACKET_H
+#define PACKET_H
 
 // This guard allows the header to be used in both C and C++ files
 #ifdef __cplusplus
 #include <cstdint> // Use C++ headers for C++ code
 #include <array>   // std::array is C++ only
+#include <cstring>
+#include <iostream>
+
 extern "C" {
 #else
 #include <stdint.h> // Use standard C headers for C code
 #include <stdbool.h> // Include for the 'bool' type in C
+
 #endif
 
 // --- C-Compatible Part ---
 // This section can be understood by both C and C++ compilers.
+#define PAYLOAD_SIZE 4
 
 // Use a C-style 'typedef enum' for compatibility.
 typedef enum {
@@ -63,7 +68,7 @@ struct Packet {
 
 // This function declaration is C-compatible and can be called from uart.c or main.cpp.
 // Note the use of 'struct Packet' for strict C compatibility.
-uint8_t SerializePacket(const struct Packet packet);
+uint8_t SerializePacket(const struct Packet *packet);
 
 
 #ifdef __cplusplus

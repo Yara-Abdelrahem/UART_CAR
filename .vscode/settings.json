@@ -18,6 +18,9 @@
         "stddef.h": "c",
         "stdarg.h": "c",
         "iostream": "cpp",
-        "cstring": "cpp"
+        "cstring": "cpp",
+        "stdint.h": "c",
+        "encoder_driver.h": "c",
+        "stm32f4xx_hal.h": "c"
     }
 }

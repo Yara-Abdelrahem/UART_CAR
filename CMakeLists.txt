@@ -48,10 +48,11 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
-    Core/Src/Packet.cpp
+    Core/Src/Packet.c
     Core/Src/CheckSum.c
     Core/Src/uart.c
     Core/Src/Utility.c
+    Core/Src/encoder_driver.c
 )
 
 # Add include paths

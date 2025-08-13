@@ -5,9 +5,12 @@ extern "C" {
 #endif
 #include <stdarg.h>
 #include <stdint.h>
+#include "stm32f4xx_hal.h"
+
 
 /* forward declare the HAL type so header doesn't require including HAL */
-typedef struct __UART_HandleTypeDef UART_HandleTypeDef;
+extern UART_HandleTypeDef huart1;
+
 
 void uart_log_init(UART_HandleTypeDef *huart);
 void uart_log_send(const char *data, uint16_t len);
