@@ -178,18 +178,13 @@ int main(void)
             packetReceivedFlag = 0;
             struct Packet receivedPacket;
             memcpy_from_volatile(&receivedPacket, rxBuffer, sizeof(struct Packet));
-            // struct Packet* packet = &receivedPacket;
-            if (SerializePacket(&receivedPacket) == 0) {
-                uart2_send_bytes((uint8_t*)"Packet OK\r\n", 11);
-            } else if(SerializePacket(&receivedPacket) == 1){
-                uart2_send_bytes((uint8_t*)"Invalid start or end packet values\r\n", 36);
-            }
-            else if(SerializePacket(&receivedPacket) == 2){
-                uart2_send_bytes((uint8_t*)"Checksum mismatch\r\n", 24);
-            }else if(SerializePacket(&receivedPacket) == 3){
-                uart2_send_bytes((uint8_t*)"Unknown packet ID\r\n", 20);
-            }else{
-                uart2_send_bytes((uint8_t*)"Bad Packet\r\n", 13);
+            uint8_t result = SerializePacket(&receivedPacket);
+            switch (result) {
+                case 0: uart2_send_bytes((uint8_t*)"Packet OK\r\n", strlen("Packet OK\r\n")); break;
+                case 1: uart2_send_bytes((uint8_t*)"Invalid start or end packet values\r\n", strlen("Invalid...")); break;
+                case 2: uart2_send_bytes((uint8_t*)"Checksum mismatch\r\n", strlen("Checksum mismatch\r\n")); break;
+                case 3: uart2_send_bytes((uint8_t*)"Unknown packet ID\r\n", strlen("Unknown packet ID\r\n")); break;
+                default: uart2_send_bytes((uint8_t*)"Bad Packet\r\n", strlen("Bad Packet\r\n")); break;
             }
             // After processing, restart reception for the next packet's first byte
             HAL_UART_Receive_IT(&huart2, &rxBuffer[0], 1);
