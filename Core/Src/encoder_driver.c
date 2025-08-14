@@ -44,12 +44,15 @@ void Encoder_ReadData(TIM_HandleTypeDef *htim, struct MotorAngle *motorAngle, ui
     motorAngle->ID = motorID;
 
     // Corrected UART transmission calls
-    HAL_UART_Transmit(&huart1 , (uint8_t*)"Encoder Data Read:\r\n", 21 , HAL_MAX_DELAY);
-    HAL_UART_Transmit(&huart1 , (uint8_t*)"ID: ", 4, HAL_MAX_DELAY);
-    HAL_UART_Transmit(&huart1 , &motorAngle->ID, 1, HAL_MAX_DELAY);
-    HAL_UART_Transmit(&huart1 , (uint8_t*)"\r\nAngle: ", 9, HAL_MAX_DELAY);
-    HAL_UART_Transmit(&huart1 , &motorAngle->angle, 1, HAL_MAX_DELAY);
-    HAL_UART_Transmit(&huart1 , (uint8_t*)"\r\nDirection: ", 13, HAL_MAX_DELAY);
-    HAL_UART_Transmit(&huart1 , &motorAngle->direction, 1, HAL_MAX_DELAY);
-    HAL_UART_Transmit(&huart1 , (uint8_t*)"\r\n", 2, HAL_MAX_DELAY);
+    char buffer[50];
+
+    sprintf(buffer, "ID: %u\r\n",motorAngle->ID);
+    HAL_UART_Transmit(&huart1, (uint8_t*)motorAngle->ID, strlen(motorAngle->ID), HAL_MAX_DELAY);
+
+    sprintf(buffer, "Angle: %u\r\n", motorAngle->angle);
+    HAL_UART_Transmit(&huart1, (uint8_t*)motorAngle->angle, strlen(motorAngle->angle), HAL_MAX_DELAY);
+
+    sprintf(buffer, "Direction: %u\r\n", motorAngle->direction);
+    HAL_UART_Transmit(&huart1, (uint8_t*)motorAngle->direction, strlen(motorAngle->direction), HAL_MAX_DELAY);
+
 }

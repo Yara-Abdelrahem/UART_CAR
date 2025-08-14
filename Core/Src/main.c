@@ -93,7 +93,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
                 return; // Exit callback
             }
         }
-
         // Increment index for the next byte
         rxIndex++;
 
@@ -179,15 +178,15 @@ int main(void)
             packetReceivedFlag = 0;
             struct Packet receivedPacket;
             memcpy_from_volatile(&receivedPacket, rxBuffer, sizeof(struct Packet));
-            struct Packet* packet = &receivedPacket;
-            if (SerializePacket(packet) == 0) {
+            // struct Packet* packet = &receivedPacket;
+            if (SerializePacket(&receivedPacket) == 0) {
                 uart2_send_bytes((uint8_t*)"Packet OK\r\n", 11);
-            } else if(SerializePacket(packet) == 1){
+            } else if(SerializePacket(&receivedPacket) == 1){
                 uart2_send_bytes((uint8_t*)"Invalid start or end packet values\r\n", 36);
             }
-            else if(SerializePacket(packet) == 2){
+            else if(SerializePacket(&receivedPacket) == 2){
                 uart2_send_bytes((uint8_t*)"Checksum mismatch\r\n", 24);
-            }else if(SerializePacket(packet) == 3){
+            }else if(SerializePacket(&receivedPacket) == 3){
                 uart2_send_bytes((uint8_t*)"Unknown packet ID\r\n", 20);
             }else{
                 uart2_send_bytes((uint8_t*)"Bad Packet\r\n", 13);

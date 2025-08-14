@@ -68,7 +68,9 @@ struct Packet {
 
 // This function declaration is C-compatible and can be called from uart.c or main.cpp.
 // Note the use of 'struct Packet' for strict C compatibility.
+uint16_t FillData(const uint8_t payload[PAYLOAD_SIZE], PacketID packetID);
 uint8_t SerializePacket(const struct Packet *packet);
+// uint16_t FillData(const uint8_t payload[PAYLOAD_SIZE], PacketID packetID)
 
 
 #ifdef __cplusplus
