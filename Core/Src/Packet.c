@@ -28,7 +28,8 @@ uint16_t FillData(const uint8_t payload[PAYLOAD_SIZE], PacketID packetID)
     return packet.checksum;
 }
 
-uint8_t SerializePacket(const struct Packet *packet){
+uint8_t SerializePacket(const struct Packet *packet)
+{
     if (!packet)
         return 4; // Null pointer
 
@@ -66,26 +67,26 @@ uint8_t SerializePacket(const struct Packet *packet){
 
     case MotorAngle_ID:
     {
+        if(packet->payload[1] > 25 || packet->payload[1] < (-160))
+        {
+            HAL_UART_Transmit(&huart1, (const uint8_t *)"Invalid angle value.\r\n", sizeof("Invalid angle value.\r\n"), HAL_MAX_DELAY);
+            return 4; // Invalid angle
+        }
         struct MotorAngle motorAngle = {
             .ID = packet->payload[0],
             .angle = packet->payload[1],
-            .direction = packet->payload[2]
-        };
+            .direction = packet->payload[2]};
 
-        HAL_UART_Transmit(&huart1, (const uint8_t *)"Encoder Data Read:\r\n", 21, HAL_MAX_DELAY);
+        HAL_UART_Transmit(&huart1, (uint8_t *)"Encoder Data Read in Packet:\r\n", sizeof("Encoder Data Read in Packet:\r\n"), HAL_MAX_DELAY);
+        char angle_msg[64];
+        snprintf(angle_msg, sizeof(angle_msg),
+                 "sended M%d: Target=%02X, Current=%02X\r\n",
+                 motorAngle.ID, motorAngle.angle, motorAngle.direction);
+        HAL_UART_Transmit(&huart1, (uint8_t *)angle_msg, strlen(angle_msg), HAL_MAX_DELAY);
 
-        HAL_UART_Transmit(&huart1, (const uint8_t *)"ID: ", 4, HAL_MAX_DELAY);
-        HAL_UART_Transmit(&huart1, &motorAngle.ID, 1, HAL_MAX_DELAY);
+        // Encoder_ReadData(&htim3, &motorAngle, 0x1);
+        Encoder_ReadAndControl(&htim3,motorAngle, motorAngle.angle, 1); // target 90 degrees
 
-        HAL_UART_Transmit(&huart1, (const uint8_t *)"\r\nAngle: ", 9, HAL_MAX_DELAY);
-        HAL_UART_Transmit(&huart1, &motorAngle.angle, 1, HAL_MAX_DELAY);
-
-        HAL_UART_Transmit(&huart1, (const uint8_t *)"\r\nDirection: ", 13, HAL_MAX_DELAY);
-        HAL_UART_Transmit(&huart1, &motorAngle.direction, 1, HAL_MAX_DELAY);
-
-        HAL_UART_Transmit(&huart1, (const uint8_t *)"\r\n", 2, HAL_MAX_DELAY);
-
-        Encoder_ReadData(&htim3, &motorAngle, 0x1);
         break;
     }
 

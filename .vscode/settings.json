@@ -21,6 +21,9 @@
         "cstring": "cpp",
         "stdint.h": "c",
         "encoder_driver.h": "c",
-        "stm32f4xx_hal.h": "c"
+        "stm32f4xx_hal.h": "c",
+        "math.h": "c",
+        "motor_driver.h": "c",
+        "stdio.h": "c"
     }
 }
