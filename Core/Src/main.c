@@ -226,8 +226,8 @@ int main(void)
       // After processing, restart reception for the next packet's first byte
       HAL_UART_Receive_IT(&huart2, &rxBuffer[0], 1);
     }
-    Encoder_ReadData(&htim3, 1);
-    HAL_Delay(1);
+    // Encoder_ReadData(&htim3, 1);
+    // HAL_Delay(1);
   }
   /* USER CODE END 3 */
 }

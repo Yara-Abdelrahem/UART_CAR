@@ -38,7 +38,7 @@ struct Motor {
 };
 struct MotorAngle {
     uint8_t ID;
-    uint8_t angle;
+    int16_t angle;
     uint8_t direction;
 };
 struct CarHorn {
@@ -69,6 +69,7 @@ struct Packet {
 // This function declaration is C-compatible and can be called from uart.c or main.cpp.
 // Note the use of 'struct Packet' for strict C compatibility.
 uint16_t FillData(const uint8_t payload[PAYLOAD_SIZE], PacketID packetID);
+uint16_t FillData_MotorAngle(uint8_t id, int16_t angle, uint8_t direction) ;
 uint8_t SerializePacket(const struct Packet *packet);
 // uint16_t FillData(const uint8_t payload[PAYLOAD_SIZE], PacketID packetID)
 

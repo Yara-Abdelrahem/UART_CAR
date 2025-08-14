@@ -24,6 +24,7 @@
         "stm32f4xx_hal.h": "c",
         "math.h": "c",
         "motor_driver.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "packet.h": "c"
     }
 }

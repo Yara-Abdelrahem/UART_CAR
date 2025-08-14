@@ -32,7 +32,7 @@ extern TIM_HandleTypeDef htim4; // PWM output timer
 // Encoder functions
 void Encoder_Init(TIM_HandleTypeDef *htim);
 void Encoder_ReadData(TIM_HandleTypeDef *htim, uint8_t motorID);
-void Encoder_ReadAndControl(TIM_HandleTypeDef *htim,struct MotorAngle motor ,float targetAngle, uint8_t motorID);
+void Encoder_ReadAndControl(TIM_HandleTypeDef *htim,struct MotorAngle motor , uint8_t motorID);
 // Motor control functions
 void Motor_SetTarget(struct MotorAngle *motor, float angle, uint8_t direction);
 void Motor_UpdateControl(struct MotorAngle *motor); // Adjust PWM to reach target
