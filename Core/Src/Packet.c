@@ -2,6 +2,7 @@
 #include "CheckSum.h"
 #include "uart.h"
 #include "Motor_Angle.h"
+#include "Speed_Motor.h"
 #include <string.h>
 
 // Assuming these are declared elsewhere
@@ -84,17 +85,19 @@ uint8_t SerializePacket(const struct Packet *packet)
             .ID = packet->payload[0],
             .speed = packet->payload[1],
             .direction = packet->payload[2]};
-        // TODO: Add motor control logic
+        //Add motor control logic
+        Motor_SetSpeed(motor.ID, motor.speed, motor.direction);
+        char msg[64];
+        snprintf(msg, sizeof(msg),
+                 "Motor M%02X: Speed=%02X, Direction=%02X\r\n",
+                 motor.ID, motor.speed, motor.direction);
+        HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
+
         break;
     }
 
     case MotorAngle_ID:
     {
-
-        // struct MotorAngle motorAngle = {
-        //     .ID = packet->payload[0],
-        //     .angle = packet->payload[1],
-        //     .direction = packet->payload[2]};
         struct MotorAngle motorAngle;
         motorAngle.ID = packet->payload[0];
         motorAngle.angle = (int16_t)(packet->payload[1] | (packet->payload[2] << 8));

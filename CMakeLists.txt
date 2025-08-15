@@ -53,6 +53,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     Core/Src/uart.c
     Core/Src/Utility.c
     Core/Src/Motor_Angle.c
+    Core/Src/Speed_Motor.c
 )
 
 # Add include paths

@@ -32,9 +32,9 @@ typedef enum {
 
 // These structs are C-compatible.
 struct Motor {
-    uint8_t ID;
-    uint8_t speed;
-    uint8_t direction;
+    uint8_t ID;        // Motor 1 or 9+++ 2
+    uint8_t speed;     // 0-100% duty
+    uint8_t direction; // 0=Backward, 1=Forward
 };
 struct MotorAngle {
     uint8_t ID;
