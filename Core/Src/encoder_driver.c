@@ -84,6 +84,7 @@ void Motor_SetAngle(float targetAngle, float currentAngle) {
 /* ==================== Combined Encoder + Motor Control ==================== */
 
 void Encoder_ReadAndControl(TIM_HandleTypeDef *htim, struct MotorAngle motor, uint8_t motorID) {
+    
     int16_t currentAngle = Encoder_GetAngle(htim);
     int16_t targetAngle = motor.angle;
     Motor_SetAngle(targetAngle, currentAngle);
