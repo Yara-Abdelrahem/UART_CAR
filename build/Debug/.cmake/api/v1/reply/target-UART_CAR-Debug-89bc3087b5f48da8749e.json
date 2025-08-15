@@ -410,7 +410,7 @@
 		{
 			"backtrace" : 7,
 			"compileGroupIndex" : 0,
-			"path" : "Core/Src/encoder_driver.c",
+			"path" : "Core/Src/Motor_Angle.c",
 			"sourceGroupIndex" : 0
 		},
 		{

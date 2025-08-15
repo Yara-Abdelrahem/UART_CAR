@@ -67,7 +67,7 @@ static void MX_TIM4_Init(void);
 #include "main.h"
 #include "Packet.h"
 #include "uart.h" // Include for uart_log_printf
-#include "encoder_driver.h"
+#include "Motor_Angle.h"
 
 volatile uint8_t rxBuffer[sizeof(struct Packet)];
 volatile uint8_t rxIndex = 0;

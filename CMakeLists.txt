@@ -52,7 +52,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     Core/Src/CheckSum.c
     Core/Src/uart.c
     Core/Src/Utility.c
-    Core/Src/encoder_driver.c
+    Core/Src/Motor_Angle.c
 )
 
 # Add include paths

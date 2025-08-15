@@ -59,7 +59,7 @@ Archive member included to satisfy reference by file (symbol)
 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-msizer.o)
                               /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-reallocr.o) (_malloc_usable_size_r)
 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
-                              CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj (__aeabi_f2d)
+                              CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj (__aeabi_f2d)
 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
                               cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj (__aeabi_uldivmod)
 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
@@ -3086,134 +3086,134 @@ Discarded input sections
  .debug_frame   0x00000000      0x18c CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
  .ARM.attributes
                 0x00000000       0x34 CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .text          0x00000000        0x0 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .data          0x00000000        0x0 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .bss           0x00000000        0x0 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .group         0x00000000        0xc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .text          0x00000000        0x0 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .data          0x00000000        0x0 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
  .text.Encoder_ReadData
-                0x00000000       0xdc CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
+                0x00000000       0xdc CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
  .bss.readCounter.0
-                0x00000000        0x4 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0xad8 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x22 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x8e CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x51 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0x103 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x6a CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0x1df CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0x29b CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x2e CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x28 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x1c CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x22 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0xfb CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000     0x1011 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0x11f CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000     0xb881 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x6d CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000     0x3693 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0x190 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x5c CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0x416 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0x9e9 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0x115 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0xf8 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0xa5 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0x15f CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0x287 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x5f CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0x236 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0x132 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0x23a CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x2e CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0x127 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x85 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x89 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0x8ed CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x47 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0x2aa CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0x126 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x58 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x22 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x3a CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x74 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x2a CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x3c CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x34 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x16 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x3c CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0x370 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x16 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x4a CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x34 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x10 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x58 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0x1e5 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x16 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x16 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000      0x170 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x16 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00000000       0x20 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
+                0x00000000        0x4 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0xad8 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x8e CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x51 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0x103 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x6a CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0x1df CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0x29b CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x2e CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x28 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x1c CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0xfb CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000     0x1011 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0x11f CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000     0xb881 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x6d CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000     0x3693 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0x190 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x5c CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0x416 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0x9e9 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0x115 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0xf8 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0xa5 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0x15f CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0x287 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x5f CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0x236 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0x132 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0x23a CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x2e CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0x127 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x85 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x89 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0x8ed CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x47 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0x2aa CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0x126 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x58 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x3a CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x74 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x2a CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x3c CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x34 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x16 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x3c CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0x370 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x16 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x4a CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x34 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x10 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x58 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0x1e5 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x16 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x16 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000      0x170 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x16 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00000000       0x20 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
  .text          0x00000000        0x0 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-exit.o)
  .data          0x00000000        0x0 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-exit.o)
  .bss           0x00000000        0x0 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-exit.o)
@@ -3473,7 +3473,7 @@ LOAD CMakeFiles/UART_CAR.dir/Core/Src/Packet.c.obj
 LOAD CMakeFiles/UART_CAR.dir/Core/Src/CheckSum.c.obj
 LOAD CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
 LOAD CMakeFiles/UART_CAR.dir/Core/Src/Utility.c.obj
-LOAD CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
+LOAD CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
 LOAD /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a
 LOAD /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++_nano.a
 LOAD /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libsupc++_nano.a
@@ -3831,18 +3831,18 @@ LOAD /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eab
                 0x08003e98                uart_log_printf
  *fill*         0x08003ede        0x2 
  .text.Encoder_GetAngle
-                0x08003ee0       0x4c CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
+                0x08003ee0       0x4c CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
  .text.Encoder_Init
-                0x08003f2c       0x18 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
+                0x08003f2c       0x18 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
                 0x08003f2c                Encoder_Init
  .text.Motor_Init
-                0x08003f44       0x90 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
+                0x08003f44       0x90 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
                 0x08003f44                Motor_Init
  .text.Motor_SetAngle
-                0x08003fd4      0x110 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
+                0x08003fd4      0x110 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
                 0x08003fd4                Motor_SetAngle
  .text.Encoder_ReadAndControl
-                0x080040e4      0x128 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
+                0x080040e4      0x128 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
                 0x080040e4                Encoder_ReadAndControl
  .text.snprintf
                 0x0800420c       0x6c /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-snprintf.o)
@@ -3942,7 +3942,7 @@ LOAD /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eab
  *fill*         0x08004c95        0x3 
  .rodata        0x08004c98       0xa0 CMakeFiles/UART_CAR.dir/Core/Src/Packet.c.obj
  .rodata        0x08004d38        0xc CMakeFiles/UART_CAR.dir/Core/Src/CheckSum.c.obj
- .rodata        0x08004d44       0xa5 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
+ .rodata        0x08004d44       0xa5 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
  *(.rodata*)
  *fill*         0x08004de9        0x3 
  .rodata.AHBPrescTable
@@ -4175,7 +4175,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000383       0x34 CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
  .ARM.attributes
-                0x000003b7       0x34 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
+                0x000003b7       0x34 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
  .ARM.attributes
                 0x000003eb       0x34 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-findfp.o)
  .ARM.attributes
@@ -4245,7 +4245,7 @@ LOAD linker stubs
  .comment       0x00000043       0x44 CMakeFiles/UART_CAR.dir/Core/Src/Packet.c.obj
  .comment       0x00000043       0x44 CMakeFiles/UART_CAR.dir/Core/Src/CheckSum.c.obj
  .comment       0x00000043       0x44 CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
- .comment       0x00000043       0x44 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
+ .comment       0x00000043       0x44 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
 
 .debug_info     0x00000000     0xf092
  .debug_info    0x00000000      0x53e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
@@ -4265,7 +4265,7 @@ LOAD linker stubs
  .debug_info    0x0000cd85      0xcfe CMakeFiles/UART_CAR.dir/Core/Src/Packet.c.obj
  .debug_info    0x0000da83      0x1c6 CMakeFiles/UART_CAR.dir/Core/Src/CheckSum.c.obj
  .debug_info    0x0000dc49      0x70c CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
- .debug_info    0x0000e355      0xd3d CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
+ .debug_info    0x0000e355      0xd3d CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
 
 .debug_abbrev   0x00000000     0x2427
  .debug_abbrev  0x00000000      0x11a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
@@ -4285,7 +4285,7 @@ LOAD linker stubs
  .debug_abbrev  0x00001d0e      0x228 CMakeFiles/UART_CAR.dir/Core/Src/Packet.c.obj
  .debug_abbrev  0x00001f36       0xf6 CMakeFiles/UART_CAR.dir/Core/Src/CheckSum.c.obj
  .debug_abbrev  0x0000202c      0x1f1 CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
- .debug_abbrev  0x0000221d      0x20a CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
+ .debug_abbrev  0x0000221d      0x20a CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
 
 .debug_aranges  0x00000000      0xd40
  .debug_aranges
@@ -4323,7 +4323,7 @@ LOAD linker stubs
  .debug_aranges
                 0x00000cc8       0x30 CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
  .debug_aranges
-                0x00000cf8       0x48 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
+                0x00000cf8       0x48 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
 
 .debug_rnglists
                 0x00000000      0xa4f
@@ -4362,7 +4362,7 @@ LOAD linker stubs
  .debug_rnglists
                 0x000009fb       0x1f CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
  .debug_rnglists
-                0x00000a1a       0x35 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
+                0x00000a1a       0x35 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
 
 .debug_macro    0x00000000    0x17125
  .debug_macro   0x00000000      0x1ce cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
@@ -4445,10 +4445,10 @@ LOAD linker stubs
  .debug_macro   0x00016c18       0x16 CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
  .debug_macro   0x00016c2e       0x16 CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
  .debug_macro   0x00016c44       0x16 CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
- .debug_macro   0x00016c5a      0x330 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
- .debug_macro   0x00016f8a      0x19b CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
+ .debug_macro   0x00016c5a      0x330 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
+ .debug_macro   0x00016f8a      0x19b CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
 
-.debug_line     0x00000000     0xf6c1
+.debug_line     0x00000000     0xf6b5
  .debug_line    0x00000000      0x74f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_line    0x0000074f     0x350a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
  .debug_line    0x00003c59     0x18c6 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
@@ -4458,36 +4458,36 @@ LOAD linker stubs
  .debug_line    0x00007d15      0xc9b cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .debug_line    0x000089b0      0x9cb cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_line    0x0000937b     0x2513 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_line    0x0000b88e      0xa88 CMakeFiles/UART_CAR.dir/Core/Src/main.c.obj
- .debug_line    0x0000c316      0x788 CMakeFiles/UART_CAR.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_line    0x0000ca9e      0x7f8 CMakeFiles/UART_CAR.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_line    0x0000d296      0x2d2 CMakeFiles/UART_CAR.dir/Core/Src/sysmem.c.obj
- .debug_line    0x0000d568       0x7a CMakeFiles/UART_CAR.dir/startup_stm32f401xc.s.obj
- .debug_line    0x0000d5e2      0x90e CMakeFiles/UART_CAR.dir/Core/Src/Packet.c.obj
- .debug_line    0x0000def0      0x717 CMakeFiles/UART_CAR.dir/Core/Src/CheckSum.c.obj
- .debug_line    0x0000e607      0x7b0 CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
- .debug_line    0x0000edb7      0x90a CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
+ .debug_line    0x0000b88e      0xa85 CMakeFiles/UART_CAR.dir/Core/Src/main.c.obj
+ .debug_line    0x0000c313      0x788 CMakeFiles/UART_CAR.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_line    0x0000ca9b      0x7f8 CMakeFiles/UART_CAR.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_line    0x0000d293      0x2d2 CMakeFiles/UART_CAR.dir/Core/Src/sysmem.c.obj
+ .debug_line    0x0000d565       0x7a CMakeFiles/UART_CAR.dir/startup_stm32f401xc.s.obj
+ .debug_line    0x0000d5df      0x90b CMakeFiles/UART_CAR.dir/Core/Src/Packet.c.obj
+ .debug_line    0x0000deea      0x717 CMakeFiles/UART_CAR.dir/Core/Src/CheckSum.c.obj
+ .debug_line    0x0000e601      0x7b0 CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
+ .debug_line    0x0000edb1      0x904 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
 
-.debug_str      0x00000000    0x8e4c8
- .debug_str     0x00000000    0x8e4c8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+.debug_str      0x00000000    0x8e4c5
+ .debug_str     0x00000000    0x8e4c5 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
                               0x865a8 (size before relaxing)
- .debug_str     0x0008e4c8    0x87920 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
- .debug_str     0x0008e4c8    0x8712c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
- .debug_str     0x0008e4c8    0x869dc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_str     0x0008e4c8    0x86723 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_str     0x0008e4c8    0x869b0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_str     0x0008e4c8    0x86d34 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_str     0x0008e4c8    0x86fca cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_str     0x0008e4c8    0x86fab cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_str     0x0008e4c8    0x8a04e CMakeFiles/UART_CAR.dir/Core/Src/main.c.obj
- .debug_str     0x0008e4c8    0x8691c CMakeFiles/UART_CAR.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_str     0x0008e4c8    0x87149 CMakeFiles/UART_CAR.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_str     0x0008e4c8     0x7162 CMakeFiles/UART_CAR.dir/Core/Src/sysmem.c.obj
- .debug_str     0x0008e4c8       0xae CMakeFiles/UART_CAR.dir/startup_stm32f401xc.s.obj
- .debug_str     0x0008e4c8    0x89b7d CMakeFiles/UART_CAR.dir/Core/Src/Packet.c.obj
- .debug_str     0x0008e4c8    0x8658e CMakeFiles/UART_CAR.dir/Core/Src/CheckSum.c.obj
- .debug_str     0x0008e4c8    0x89c8f CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
- .debug_str     0x0008e4c8    0x8aaa1 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
+ .debug_str     0x0008e4c5    0x87920 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .debug_str     0x0008e4c5    0x8712c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .debug_str     0x0008e4c5    0x869dc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_str     0x0008e4c5    0x86723 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_str     0x0008e4c5    0x869b0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_str     0x0008e4c5    0x86d34 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_str     0x0008e4c5    0x86fca cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_str     0x0008e4c5    0x86fab cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_str     0x0008e4c5    0x8a04e CMakeFiles/UART_CAR.dir/Core/Src/main.c.obj
+ .debug_str     0x0008e4c5    0x8691c CMakeFiles/UART_CAR.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_str     0x0008e4c5    0x87149 CMakeFiles/UART_CAR.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_str     0x0008e4c5     0x7162 CMakeFiles/UART_CAR.dir/Core/Src/sysmem.c.obj
+ .debug_str     0x0008e4c5       0xae CMakeFiles/UART_CAR.dir/startup_stm32f401xc.s.obj
+ .debug_str     0x0008e4c5    0x89b7d CMakeFiles/UART_CAR.dir/Core/Src/Packet.c.obj
+ .debug_str     0x0008e4c5    0x8658e CMakeFiles/UART_CAR.dir/Core/Src/CheckSum.c.obj
+ .debug_str     0x0008e4c5    0x89c8f CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
+ .debug_str     0x0008e4c5    0x8aa9e CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
 
 .debug_frame    0x00000000     0x3c64
  .debug_frame   0x00000000       0x58 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
@@ -4506,7 +4506,7 @@ LOAD linker stubs
  .debug_frame   0x000033b8       0x80 CMakeFiles/UART_CAR.dir/Core/Src/Packet.c.obj
  .debug_frame   0x00003438       0x5c CMakeFiles/UART_CAR.dir/Core/Src/CheckSum.c.obj
  .debug_frame   0x00003494       0x98 CMakeFiles/UART_CAR.dir/Core/Src/uart.c.obj
- .debug_frame   0x0000352c       0xf8 CMakeFiles/UART_CAR.dir/Core/Src/encoder_driver.c.obj
+ .debug_frame   0x0000352c       0xf8 CMakeFiles/UART_CAR.dir/Core/Src/Motor_Angle.c.obj
  .debug_frame   0x00003624      0x144 /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-findfp.o)
  .debug_frame   0x00003768       0x7c /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-snprintf.o)
  .debug_frame   0x000037e4       0x4c /opt/st/stm32cubeclt_1.19.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-vsnprintf.o)
