@@ -84,7 +84,22 @@ uint8_t SerializePacket(const struct Packet *packet)
         struct Motor motor = {
             .ID = packet->payload[0],
             .speed = packet->payload[1],
-            .direction = packet->payload[2]};
+            .direction = packet->payload[2]}; 
+
+        if (motor.ID < 1 || motor.ID > 2)
+        {
+            HAL_UART_Transmit(&huart1, (const uint8_t *)"Invalid motor ID.\r\n", 20, HAL_MAX_DELAY);
+            return 5; // Invalid motor ID
+        }
+        if (motor.speed > 100||motor.speed < 0){
+            HAL_UART_Transmit(&huart1, (const uint8_t *)"Invalid speed value.\r\n", 23, HAL_MAX_DELAY);
+            return 6; // Invalid speed
+        }
+        if (motor.direction > 1||motor.direction < 0){ 
+            HAL_UART_Transmit(&huart1, (const uint8_t *)"Invalid direction value.\r\n", 26, HAL_MAX_DELAY);
+            return 7; // Invalid direction
+        }
+        
         //Add motor control logic
         // char msg[64];
         // snprintf(msg, sizeof(msg),
