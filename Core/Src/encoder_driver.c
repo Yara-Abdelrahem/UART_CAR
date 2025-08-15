@@ -20,7 +20,7 @@ extern UART_HandleTypeDef huart1; // UART for debug messages
 
 /* ==================== Encoder Functions ==================== */
 
-static float Encoder_GetAngle(TIM_HandleTypeDef *htim) {
+static int16_t Encoder_GetAngle(TIM_HandleTypeDef *htim) {
     int16_t signedCount = (int16_t)__HAL_TIM_GET_COUNTER(htim);
     return ((float)signedCount / ENCODER_COUNTS_PER_REV) * 360.0f;
 }
@@ -56,9 +56,21 @@ void Encoder_ReadData(TIM_HandleTypeDef *htim, uint8_t motorID) {
 void Motor_Init(void) {
     HAL_TIM_PWM_Start(&htim4, MOTOR_PWM_CHANNEL);
     HAL_GPIO_WritePin(MOTOR_DIR_PORT, MOTOR_DIR_PIN, GPIO_PIN_RESET);
+
+    int16_t currentAngle = Encoder_GetAngle(&htim4);
+    int16_t targetAngle = -65;
+    Motor_SetAngle(targetAngle, currentAngle);
+    int16_t currentAngle_after_update= Encoder_GetAngle(&htim4);
+    
+    char msg[64];
+    snprintf(msg, sizeof(msg),
+          "Init: Target=%04X, Current=%04X\r\n",
+             targetAngle, currentAngle_after_update);
+    HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
+    
 }
 
-void Motor_SetAngle(float targetAngle, float currentAngle) {
+void Motor_SetAngle(int16_t targetAngle, int16_t currentAngle) {
     float error = targetAngle - currentAngle;
 
     // Normalize error to [-180, 180]
@@ -84,7 +96,6 @@ void Motor_SetAngle(float targetAngle, float currentAngle) {
 /* ==================== Combined Encoder + Motor Control ==================== */
 
 void Encoder_ReadAndControl(TIM_HandleTypeDef *htim, struct MotorAngle motor, uint8_t motorID) {
-    
     int16_t currentAngle = Encoder_GetAngle(htim);
     int16_t targetAngle = motor.angle;
     Motor_SetAngle(targetAngle, currentAngle);

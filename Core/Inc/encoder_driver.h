@@ -34,10 +34,10 @@ void Encoder_Init(TIM_HandleTypeDef *htim);
 void Encoder_ReadData(TIM_HandleTypeDef *htim, uint8_t motorID);
 void Encoder_ReadAndControl(TIM_HandleTypeDef *htim,struct MotorAngle motor , uint8_t motorID);
 // Motor control functions
-void Motor_SetTarget(struct MotorAngle *motor, float angle, uint8_t direction);
-void Motor_UpdateControl(struct MotorAngle *motor); // Adjust PWM to reach target
+// void Motor_SetTarget(struct MotorAngle *motor, float angle, uint8_t direction);
+// void Motor_UpdateControl(struct MotorAngle *motor); // Adjust PWM to reach target
 void Motor_Init(void);                       // Init PWM + DIR pin
-void Motor_SetAngle(float targetAngle, float currentAngle) ;
+void Motor_SetAngle(int16_t targetAngle, int16_t currentAngle) ;
 // void Encoder_ReadAndControl(TIM_HandleTypeDef *htim, float targetAngle, uint8_t motorID)
 
 #endif // ENCODER_DRIVER_H
