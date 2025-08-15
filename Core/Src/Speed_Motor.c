@@ -80,4 +80,10 @@ void Motor_SetSpeed(uint8_t motorID, uint8_t speed, uint8_t direction) {
         __HAL_TIM_SET_COMPARE(MOTOR2_PWM_TIMER, MOTOR2_PWM_CHANNEL, 
                               (arr * speed) / 100);
     }
+    int16_t encoder_speed= Encoder_ReadPosition(motorID);
+    // Debugging output
+    char msg[100];
+    snprintf(msg, sizeof(msg), "Motor %d Actual Speed: %d , Sent speed : %02X ,Direction : %02X\r\n",motorID, encoder_speed,speed, direction);
+    HAL_UART_Transmit(&huart1, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+
 }

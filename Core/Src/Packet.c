@@ -86,12 +86,14 @@ uint8_t SerializePacket(const struct Packet *packet)
             .speed = packet->payload[1],
             .direction = packet->payload[2]};
         //Add motor control logic
+        // char msg[64];
+        // snprintf(msg, sizeof(msg),
+        //          "Motor M%02X: Speed=%02X, Direction=%02X\r\n",
+        //          motor.ID, motor.speed, motor.direction);
+        // HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
+
         Motor_SetSpeed(motor.ID, motor.speed, motor.direction);
-        char msg[64];
-        snprintf(msg, sizeof(msg),
-                 "Motor M%02X: Speed=%02X, Direction=%02X\r\n",
-                 motor.ID, motor.speed, motor.direction);
-        HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
+
 
         break;
     }
