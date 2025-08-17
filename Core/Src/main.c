@@ -203,13 +203,13 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    Horn_On();
-    Light_Off();
-    HAL_Delay(500); // 500 ms honk
-    Horn_Off();
-    Light_On();
-    HAL_Delay(500); // 500 ms light on
-    
+    // Horn_On();
+    // Light_Off();
+    // HAL_Delay(500); // 500 ms honk
+    // Horn_Off();
+    // Light_On();
+    // HAL_Delay(500); // 500 ms light on
+
     if (packetReceivedFlag)
     {
       packetReceivedFlag = 0;
@@ -244,7 +244,7 @@ int main(void)
       // After processing, restart reception for the next packet's first byte
       HAL_UART_Receive_IT(&huart2, &rxBuffer[0], 1);
     }
-    // Encoder_ReadData(&htim3, 1);
+    Encoder_ReadData(&htim3, 1);
     HAL_Delay(1);
   }
   /* USER CODE END 3 */

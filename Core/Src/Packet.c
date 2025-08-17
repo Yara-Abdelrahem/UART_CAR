@@ -107,7 +107,7 @@ uint8_t SerializePacket(const struct Packet *packet)
         //          motor.ID, motor.speed, motor.direction);
         // HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
 
-        Motor_SetSpeed(motor.ID, motor.speed, motor.direction);
+        Motor_SetSpeed(2, motor.speed, motor.direction);
 
 
         break;

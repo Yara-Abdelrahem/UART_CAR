@@ -58,32 +58,37 @@ float Encoder_ReadSpeed(uint8_t motorID, uint16_t counts_per_rev, float dt_sec) 
 }
 
 
-
-
-// Function to set speed and direction for a motor
 void Motor_SetSpeed(uint8_t motorID, uint8_t speed, uint8_t direction) {
     uint32_t arr;
 
-    if (motorID == 1) {
+    if (motorID == 1) {  // Motor with encoder (steering)
         HAL_GPIO_WritePin(MOTOR1_DIR_PORT, MOTOR1_DIR_PIN, 
                           direction ? GPIO_PIN_SET : GPIO_PIN_RESET);
 
         arr = __HAL_TIM_GET_AUTORELOAD(MOTOR1_PWM_TIMER);
         __HAL_TIM_SET_COMPARE(MOTOR1_PWM_TIMER, MOTOR1_PWM_CHANNEL, 
                               (arr * speed) / 100);
+
+        // Feedback only for motor with encoder
+        int16_t encoder_speed = Encoder_ReadPosition(motorID);
+        char msg[100];
+        snprintf(msg, sizeof(msg), "Motor %d Actual Enc=%d , PWM=%02X ,Dir=%02X\r\n",
+                 motorID, encoder_speed, speed, direction);
+        HAL_UART_Transmit(&huart1, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
     }
-    else if (motorID == 2) {
+    else if (motorID == 2) {  // Motor without encoder (drive motor)
         HAL_GPIO_WritePin(MOTOR2_DIR_PORT, MOTOR2_DIR_PIN, 
                           direction ? GPIO_PIN_SET : GPIO_PIN_RESET);
 
         arr = __HAL_TIM_GET_AUTORELOAD(MOTOR2_PWM_TIMER);
         __HAL_TIM_SET_COMPARE(MOTOR2_PWM_TIMER, MOTOR2_PWM_CHANNEL, 
                               (arr * speed) / 100);
-    }
-    int16_t encoder_speed= Encoder_ReadPosition(motorID);
-    // Debugging output
-    char msg[100];
-    snprintf(msg, sizeof(msg), "Motor %d Actual Speed: %d , Sent speed : %02X ,Direction : %02X\r\n",motorID, encoder_speed,speed, direction);
-    HAL_UART_Transmit(&huart1, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
 
+        // Only debug PWM & direction, no encoder feedback
+        char msg[100];
+        snprintf(msg, sizeof(msg), "Motor %d (no encoder) PWM=%02X ,Dir=%02X\r\n",
+                 motorID, speed, direction);
+        HAL_UART_Transmit(&huart1, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+    }
 }
+

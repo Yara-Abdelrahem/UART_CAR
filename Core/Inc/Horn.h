@@ -8,3 +8,4 @@
 void Horn_Init(void);
 void Horn_On(void);
 void Horn_Off(void);
+void Horn_Toggle(void);
