@@ -43,13 +43,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 74,
+				"line" : 76,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 60,
+				"line" : 62,
 				"parent" : 0
 			},
 			{
@@ -138,7 +138,9 @@
 				8,
 				9,
 				10,
-				11
+				11,
+				12,
+				13
 			]
 		},
 		{
@@ -313,7 +315,9 @@
 				8,
 				9,
 				10,
-				11
+				11,
+				12,
+				13
 			]
 		},
 		{
@@ -327,8 +331,6 @@
 			"name" : "Object Libraries",
 			"sourceIndexes" : 
 			[
-				12,
-				13,
 				14,
 				15,
 				16,
@@ -343,7 +345,9 @@
 				25,
 				26,
 				27,
-				28
+				28,
+				29,
+				30
 			]
 		}
 	],
@@ -419,6 +423,18 @@
 			"backtrace" : 7,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/Speed_Motor.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/Horn.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/Light.c",
 			"sourceGroupIndex" : 0
 		},
 		{

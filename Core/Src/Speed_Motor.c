@@ -19,9 +19,9 @@ extern TIM_HandleTypeDef htim4;
 
 // Direction pins
 #define MOTOR1_DIR_PORT     GPIOB
-#define MOTOR1_DIR_PIN      GPIO_PIN_0
+#define MOTOR1_DIR_PIN      GPIO_PIN_4
 #define MOTOR2_DIR_PORT     GPIOB
-#define MOTOR2_DIR_PIN      GPIO_PIN_1
+#define MOTOR2_DIR_PIN      GPIO_PIN_5
 
 
 //Encoder part

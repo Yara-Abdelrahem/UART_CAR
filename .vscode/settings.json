@@ -25,6 +25,15 @@
         "math.h": "c",
         "motor_driver.h": "c",
         "stdio.h": "c",
-        "packet.h": "c"
+        "packet.h": "c",
+        "sstream": "c",
+        "unordered_set": "c",
+        "string": "c",
+        "format": "c",
+        "string_view": "c",
+        "motor_angle.h": "c",
+        "light.h": "c",
+        "speed_motor.h": "c",
+        "horn.h": "c"
     }
 }

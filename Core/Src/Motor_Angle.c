@@ -35,13 +35,13 @@ void Encoder_ReadData(TIM_HandleTypeDef *htim, uint8_t motorID) {
 
     int dirFlag = __HAL_TIM_IS_TIM_COUNTING_DOWN(htim) ? MOTOR_DIR_CCW : MOTOR_DIR_CW;
     int16_t signedCount = (int16_t)__HAL_TIM_GET_COUNTER(htim);
-    float angle = ((float)signedCount / ENCODER_COUNTS_PER_REV) * 360.0f;
+    int16_t angle = (signedCount / ENCODER_COUNTS_PER_REV) * 360.0f;
 
     readCounter++;
     if (readCounter >= printInterval) {
         char msg[80];
         snprintf(msg, sizeof(msg),
-                 "Enc M%d: CNT=%d, Angle=%.2f, Dir=%s\r\n",
+                 "Enc M%d: CNT=%d, Angle=%d, Dir=%s\r\n",
                  motorID,
                  signedCount,
                  angle,
@@ -57,16 +57,16 @@ void Motor_Init(void) {
     HAL_TIM_PWM_Start(&htim4, MOTOR_PWM_CHANNEL);
     HAL_GPIO_WritePin(MOTOR_DIR_PORT, MOTOR_DIR_PIN, GPIO_PIN_RESET);
 
-    int16_t currentAngle = Encoder_GetAngle(&htim4);
-    int16_t targetAngle = -65;
-    Motor_SetAngle(targetAngle, currentAngle);
-    int16_t currentAngle_after_update= Encoder_GetAngle(&htim4);
+    // int16_t currentAngle = Encoder_GetAngle(&htim4);
+    // int16_t targetAngle = -65;
+    // Motor_SetAngle(targetAngle, currentAngle);
+    // int16_t currentAngle_after_update= Encoder_GetAngle(&htim4);
     
-    char msg[64];
-    snprintf(msg, sizeof(msg),
-          "Init: Target=%04X, Current=%04X\r\n",
-             targetAngle, currentAngle_after_update);
-    HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
+    // char msg[64];
+    // snprintf(msg, sizeof(msg),
+    //       "Init: Target=%04X, Current=%04X\r\n",
+    //          targetAngle, currentAngle_after_update);
+    // HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
     
 }
 
@@ -97,7 +97,7 @@ void Motor_SetAngle(int16_t targetAngle, int16_t currentAngle) {
 
 void Encoder_ReadAndControl(TIM_HandleTypeDef *htim, struct MotorAngle motor, uint8_t motorID) {
     int16_t currentAngle = Encoder_GetAngle(htim);
-    int16_t targetAngle = motor.angle;
+    int16_t targetAngle = -10;
     Motor_SetAngle(targetAngle, currentAngle);
 
     // Send status

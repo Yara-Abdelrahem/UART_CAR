@@ -133,7 +133,7 @@ uint8_t SerializePacket(const struct Packet *packet)
         HAL_UART_Transmit(&huart1, (uint8_t *)angle_msg, strlen(angle_msg), HAL_MAX_DELAY);
 
         // Encoder_ReadData(&htim3, &motorAngle, 0x1);
-        Encoder_ReadAndControl(&htim3, motorAngle, 1); // target 90 degrees
+        // Encoder_ReadAndControl(&htim3, motorAngle, 1); // target 90 degrees
 
         break;
     }
