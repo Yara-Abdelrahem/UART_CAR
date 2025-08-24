@@ -34,6 +34,7 @@
         "motor_angle.h": "c",
         "light.h": "c",
         "speed_motor.h": "c",
-        "horn.h": "c"
+        "horn.h": "c",
+        "cstdint": "c"
     }
 }

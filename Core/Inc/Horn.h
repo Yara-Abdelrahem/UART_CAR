@@ -3,9 +3,9 @@
 
 // Light on PB1
 #define HORN_GPIO_PORT GPIOB
-#define HORN_PIN    GPIO_PIN_1
+#define HORN_PIN    GPIO_PIN_0
 
 void Horn_Init(void);
 void Horn_On(void);
 void Horn_Off(void);
-void Horn_Toggle(void);
+void Horn_Toggle(uint32_t delay);

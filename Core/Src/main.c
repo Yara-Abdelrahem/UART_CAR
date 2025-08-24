@@ -76,6 +76,7 @@ static void MX_TIM5_Init(void);
 #include "Horn.h"
 #include "Light.h"
 
+
 volatile uint8_t rxBuffer[sizeof(struct Packet)];
 volatile uint8_t rxIndex = 0;
 volatile uint8_t packetReceivedFlag = 0;
@@ -194,6 +195,8 @@ int main(void)
   Motor_Init();
   Horn_Init();
   Light_Init();
+  Motor_init();
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -204,11 +207,27 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
     // Horn_On();
-    // Light_Off();
+    // Light_Front_Off();
     // HAL_Delay(500); // 500 ms honk
     // Horn_Off();
-    // Light_On();
+    // Light_Front_On();
     // HAL_Delay(500); // 500 ms light on
+
+    // Horn_Toggle();
+
+        //     HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET); // DIR = Forward
+        // __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_3, 2100); // ~50% duty if ARR=4199
+
+    //         // 1. Start PWM
+    // HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_3);
+
+    // // 2. Set direction forward
+    // HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET);
+
+    // // 3. Set ~50% duty cycle
+    // uint32_t arr = __HAL_TIM_GET_AUTORELOAD(&htim4);
+    // __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_3, arr / 2);
+
 
     if (packetReceivedFlag)
     {
@@ -244,7 +263,7 @@ int main(void)
       // After processing, restart reception for the next packet's first byte
       HAL_UART_Receive_IT(&huart2, &rxBuffer[0], 1);
     }
-    Encoder_ReadData(&htim3, 1);
+    // Encoder_ReadData(&htim3, 1);
     HAL_Delay(1);
   }
   /* USER CODE END 3 */
@@ -578,23 +597,13 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_10|GPIO_PIN_12
+                          |GPIO_PIN_13|GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_7, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_4|GPIO_PIN_5
-                          |GPIO_PIN_7, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin : PA5 */
-  GPIO_InitStruct.Pin = GPIO_PIN_5;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : PB0 PB1 PB4 PB5
-                           PB7 */
-  GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_4|GPIO_PIN_5
-                          |GPIO_PIN_7;
+  /*Configure GPIO pins : PB0 PB1 PB10 PB12
+                           PB13 PB4 PB5 PB7 */
+  GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_10|GPIO_PIN_12
+                          |GPIO_PIN_13|GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_7;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

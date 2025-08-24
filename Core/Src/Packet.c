@@ -3,6 +3,9 @@
 #include "uart.h"
 #include "Motor_Angle.h"
 #include "Speed_Motor.h"
+#include "Horn.h"
+#include "Light.h"
+#include <stdio.h>
 #include <string.h>
 
 // Assuming these are declared elsewhere
@@ -19,7 +22,6 @@ uint16_t FillData(const uint8_t payload[PAYLOAD_SIZE], PacketID packetID)
 
     memcpy(packet.payload, payload, PAYLOAD_SIZE);
 
-
     uint8_t checksumData[6];
     memcpy(checksumData, packet.payload, PAYLOAD_SIZE);
     checksumData[4] = (uint8_t)packetID;
@@ -29,7 +31,8 @@ uint16_t FillData(const uint8_t payload[PAYLOAD_SIZE], PacketID packetID)
 
     return packet.checksum;
 }
-uint16_t FillData_MotorAngle(uint8_t id, int16_t angle, uint8_t direction) {
+uint16_t FillData_MotorAngle(uint8_t id, int16_t angle, uint8_t direction)
+{
     struct Packet packet;
     packet.start_packet = 0xAA55;
     packet.end_packet = 0x0D0A;
@@ -50,7 +53,6 @@ uint16_t FillData_MotorAngle(uint8_t id, int16_t angle, uint8_t direction) {
 
     return packet.checksum;
 }
-
 
 uint8_t SerializePacket(const struct Packet *packet)
 {
@@ -84,31 +86,26 @@ uint8_t SerializePacket(const struct Packet *packet)
         struct Motor motor = {
             .ID = packet->payload[0],
             .speed = packet->payload[1],
-            .direction = packet->payload[2]}; 
+            .direction = packet->payload[2]};
 
         if (motor.ID < 1 || motor.ID > 2)
         {
             HAL_UART_Transmit(&huart1, (const uint8_t *)"Invalid motor ID.\r\n", 20, HAL_MAX_DELAY);
             return 5; // Invalid motor ID
         }
-        if (motor.speed > 100||motor.speed < 0){
+        if (motor.speed > 100 || motor.speed < 0)
+        {
             HAL_UART_Transmit(&huart1, (const uint8_t *)"Invalid speed value.\r\n", 23, HAL_MAX_DELAY);
             return 6; // Invalid speed
         }
-        if (motor.direction > 1||motor.direction < 0){ 
+        if (motor.direction > 1 || motor.direction < 0)
+        {
             HAL_UART_Transmit(&huart1, (const uint8_t *)"Invalid direction value.\r\n", 26, HAL_MAX_DELAY);
             return 7; // Invalid direction
         }
-        
-        //Add motor control logic
-        // char msg[64];
-        // snprintf(msg, sizeof(msg),
-        //          "Motor M%02X: Speed=%02X, Direction=%02X\r\n",
-        //          motor.ID, motor.speed, motor.direction);
-        // HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
+        // Run motor 1 forward at 60%
 
-        Motor_SetSpeed(2, motor.speed, motor.direction);
-
+        Motor_SetSpeed(3, 60, 1);
 
         break;
     }
@@ -119,7 +116,7 @@ uint8_t SerializePacket(const struct Packet *packet)
         motorAngle.ID = packet->payload[0];
         motorAngle.angle = (int16_t)(packet->payload[1] | (packet->payload[2] << 8));
         motorAngle.direction = packet->payload[3];
-                if (motorAngle.angle > 25 || motorAngle.angle < (-160))
+        if (motorAngle.angle > 25 || motorAngle.angle < (-160))
         {
             HAL_UART_Transmit(&huart1, (const uint8_t *)"Invalid angle value.\r\n", sizeof("Invalid angle value.\r\n"), HAL_MAX_DELAY);
             return 4; // Invalid angle
@@ -128,7 +125,7 @@ uint8_t SerializePacket(const struct Packet *packet)
         HAL_UART_Transmit(&huart1, (uint8_t *)"Encoder Data Read in Packet:\r\n", sizeof("Encoder Data Read in Packet:\r\n"), HAL_MAX_DELAY);
         char angle_msg[64];
         snprintf(angle_msg, sizeof(angle_msg),
-         "sended M%02X: Target=%04X, Current=%04X\r\n",
+                 "sended M%02X: Target=%04X, Current=%04X\r\n",
                  motorAngle.ID, motorAngle.angle, motorAngle.direction);
         HAL_UART_Transmit(&huart1, (uint8_t *)angle_msg, strlen(angle_msg), HAL_MAX_DELAY);
 
@@ -143,6 +140,16 @@ uint8_t SerializePacket(const struct Packet *packet)
         struct CarHorn carHorn = {
             .ID = packet->payload[0],
             .duartion = packet->payload[1]};
+
+        if (carHorn.duartion < 0)
+        {
+            HAL_UART_Transmit(&huart1, (const uint8_t *)"Invalid duration.\r\n", sizeof("Invalid duration.\r\n"), HAL_MAX_DELAY);
+            return 5; // Invalid angle
+        }
+        else
+        {
+            Horn_Toggle((carHorn.duartion) * 1000);
+        }
         break;
     }
 
@@ -151,6 +158,59 @@ uint8_t SerializePacket(const struct Packet *packet)
         struct CarLight carLight = {
             .ID = packet->payload[0],
             .lightStatus = packet->payload[1]};
+
+        if (carLight.lightStatus > 8)
+        {
+
+            char msg[50];
+            snprintf(msg, sizeof(msg), "Invaild ID %02X\r\n", carLight.lightStatus);
+            HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
+            // HAL_UART_Transmit(&huart1, (const uint8_t *)"Invalid light status value.\r\n", 30, HAL_MAX_DELAY);
+            return 8; // Invalid light status
+        }
+
+        if (carLight.lightStatus == 0)
+        {
+            // front off
+            Light_Front_Off();
+        }
+        else if (carLight.lightStatus == 1)
+        {
+            // front on
+            Light_Front_On();
+        }
+
+        else if (carLight.lightStatus == 2)
+        {
+            // back on
+            Light_Back_On();
+        }
+        else if (carLight.lightStatus == 3)
+        {
+            // back off
+            Light_Back_Off();
+        }
+        else if (carLight.lightStatus == 4)
+        {
+            // rigth on
+            Light_Right_On();
+        }
+        else if (carLight.lightStatus == 5)
+        {
+            // right off
+            Light_Right_Off();
+        }
+        else if (carLight.lightStatus == 6)
+        {
+            // left on
+            Light_Left_On();
+        }
+        else if (carLight.lightStatus == 7)
+        {
+            // left off
+            Light_Left_Off();
+        }
+
         break;
     }
 
@@ -162,7 +222,6 @@ uint8_t SerializePacket(const struct Packet *packet)
             .value = packet->payload[2]};
         break;
     }
-
     default:
     {
         HAL_UART_Transmit(&huart1,
