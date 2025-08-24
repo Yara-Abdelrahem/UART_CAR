@@ -190,9 +190,7 @@ int main(void)
   // The first byte will be placed at rxBuffer[0]
   HAL_UART_Receive_IT(&huart2, &rxBuffer[0], 1);
   Encoder_Init(&htim3);
-
-  Encoder_Init(&htim3);
-  Motor_Init();
+  Motor_Init_Angle();
   Horn_Init();
   Light_Init();
   Motor_init();
