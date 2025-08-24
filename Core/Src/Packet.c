@@ -88,7 +88,7 @@ uint8_t SerializePacket(const struct Packet *packet)
             .speed = packet->payload[1],
             .direction = packet->payload[2]};
 
-        if (motor.ID < 1 || motor.ID > 2)
+        if (motor.ID < 1 || motor.ID > 3)
         {
             HAL_UART_Transmit(&huart1, (const uint8_t *)"Invalid motor ID.\r\n", 20, HAL_MAX_DELAY);
             return 5; // Invalid motor ID
@@ -105,7 +105,7 @@ uint8_t SerializePacket(const struct Packet *packet)
         }
         // Run motor 1 forward at 60%
 
-        Motor_SetSpeed(3, 60, 1);
+        Motor_SetSpeed(motor.ID, motor.speed, motor.direction);
 
         break;
     }

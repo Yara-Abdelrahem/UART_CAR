@@ -69,52 +69,6 @@ void Motor_init()
     HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_4);
 }
 
-// void Motor_SetSpeed(uint8_t motorID, uint8_t speed, uint8_t direction)
-// {
-//     uint32_t arr;
-//     int16_t encoder_value;
-
-//     if (motorID == 1) // Motor 1 (with encoder)
-//     {
-//         // Set direction
-//         HAL_GPIO_WritePin(MOTOR1_DIR_PORT, MOTOR1_DIR_PIN,
-//                           direction ? GPIO_PIN_SET : GPIO_PIN_RESET);
-
-//         // Scale speed (0-100%) into CCR value
-//         arr = __HAL_TIM_GET_AUTORELOAD(MOTOR1_PWM_TIMER);
-//         __HAL_TIM_SET_COMPARE(MOTOR1_PWM_TIMER, MOTOR1_PWM_CHANNEL,
-//                               (arr * speed) / 100);
-
-//         // Feedback
-//         encoder_value = Encoder_ReadPosition(motorID);
-//         char msg[100];
-//         snprintf(msg, sizeof(msg),
-//                  "Motor %d Enc=%d, PWM=%d%%, Dir=%d\r\n",
-//                  motorID, encoder_value, speed, direction);
-//         HAL_UART_Transmit(&huart1, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
-//     }
-//     else if (motorID == 2) // Motor 2 (with encoder)
-//     {
-//         // Set direction
-//         HAL_GPIO_WritePin(MOTOR2_DIR_PORT, MOTOR2_DIR_PIN,
-//                           direction ? GPIO_PIN_SET : GPIO_PIN_RESET);
-
-//         // Scale speed (0-100%) into CCR value
-//         arr = __HAL_TIM_GET_AUTORELOAD(MOTOR2_PWM_TIMER);
-//         __HAL_TIM_SET_COMPARE(MOTOR2_PWM_TIMER, MOTOR2_PWM_CHANNEL,
-//                               (arr * speed) / 100);
-
-//         // Feedback
-//         encoder_value = Encoder_ReadPosition(motorID);
-//         char msg[100];
-//         snprintf(msg, sizeof(msg),
-//                  "Motor %d Enc=%d, PWM=%d%%, Dir=%d\r\n",
-//                  motorID, encoder_value, speed, direction);
-//         HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
-//     }
-//      Motor_Stop(motorID);
-// }
-
 void Motor_SetSpeed(uint8_t motorID, uint8_t speed, uint8_t direction)
 {
     uint32_t arr;
@@ -136,7 +90,6 @@ void Motor_SetSpeed(uint8_t motorID, uint8_t speed, uint8_t direction)
                  "Motor 1 Enc=%d, PWM=%d%%, Dir=%d\r\n",
                  encoder_value, speed, direction);
         HAL_UART_Transmit_IT(&huart1, (uint8_t *)msg, strlen(msg)); // non-blocking
-        // Motor_Stop(motorID);
     }
 
     // Motor 2 only
@@ -154,7 +107,6 @@ void Motor_SetSpeed(uint8_t motorID, uint8_t speed, uint8_t direction)
                  "Motor 2 Enc=%d, PWM=%d%%, Dir=%d\r\n",
                  encoder_value, speed, direction);
         HAL_UART_Transmit_IT(&huart1, (uint8_t *)msg, strlen(msg)); // non-blocking
-        // Motor_Stop(motorID);
     }
 
     Motor_Stop(motorID);
