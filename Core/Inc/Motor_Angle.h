@@ -35,7 +35,7 @@ void Motor_Run(uint8_t speed_percent, uint8_t direction);
  * 
  * @param target : encoder count value to reach
  */
-void Motor_GotoEncoder(int16_t target);
+void Motor_GotoEncoder(int32_t target, uint8_t direction);
 
 /**
  * @brief Move motor to specific angle relative to center.
@@ -55,7 +55,7 @@ void Encoder_Init(TIM_HandleTypeDef *htim);
 /**
  * @brief Get current encoder angle in degrees.
  */
-static int16_t Encoder_GetAngle(TIM_HandleTypeDef *htim);
+ int16_t Encoder_GetAngle(TIM_HandleTypeDef *htim);
 
 /**
  * @brief Debug print encoder data (CNT, angle, direction) over UART.
@@ -64,6 +64,8 @@ static int16_t Encoder_GetAngle(TIM_HandleTypeDef *htim);
  * @param motorID : motor index (for multi-motor debug print)
  */
 void Encoder_ReadData(TIM_HandleTypeDef *htim, uint8_t motorID);
+
+void Debug_Encoder(void);
 
 #endif /* MOTOR_ANGLE_H */
 

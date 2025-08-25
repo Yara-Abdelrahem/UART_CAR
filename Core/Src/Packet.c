@@ -128,17 +128,8 @@ uint8_t SerializePacket(const struct Packet *packet)
                  "sended M%02X: Target=%04X, Current=%04X\r\n",
                  motorAngle.ID, motorAngle.angle, motorAngle.direction);
         HAL_UART_Transmit(&huart1, (uint8_t *)angle_msg, strlen(angle_msg), HAL_MAX_DELAY);
-
-        Encoder_ReadData(&htim3, 1);
-        // Encoder_ReadAndControl(&htim3, motorAngle, motorAngle.ID); // target 90 degrees
-        // Motor_GotoAngle(motorAngle.angle);
-        // Motor_GotoAngle(90); // Go full left
-        // HAL_Delay(500);
-
-        // Motor_GotoAngle(45);  // Go half right
-        // HAL_Delay(500);
         
-        // Motor_GotoAngle(0);   // Stay at center
+        Motor_GotoAngle(30, 0);
         break;
     }
 
