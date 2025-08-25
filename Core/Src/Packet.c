@@ -131,7 +131,14 @@ uint8_t SerializePacket(const struct Packet *packet)
 
         Encoder_ReadData(&htim3, 1);
         // Encoder_ReadAndControl(&htim3, motorAngle, motorAngle.ID); // target 90 degrees
-        Motor_GotoAngle(motorAngle.angle);
+        // Motor_GotoAngle(motorAngle.angle);
+        // Motor_GotoAngle(90); // Go full left
+        // HAL_Delay(500);
+
+        // Motor_GotoAngle(45);  // Go half right
+        // HAL_Delay(500);
+        
+        // Motor_GotoAngle(0);   // Stay at center
         break;
     }
 
