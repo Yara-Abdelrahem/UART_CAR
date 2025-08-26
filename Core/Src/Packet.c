@@ -116,7 +116,7 @@ uint8_t SerializePacket(const struct Packet *packet)
         motorAngle.ID = packet->payload[0];
         motorAngle.angle = (int16_t)(packet->payload[1] | (packet->payload[2] << 8));
         motorAngle.direction = packet->payload[3];
-        if (motorAngle.angle > 25 || motorAngle.angle < (-160))
+        if (motorAngle.angle > 90 || motorAngle.angle < 0)
         {
             HAL_UART_Transmit(&huart1, (const uint8_t *)"Invalid angle value.\r\n", sizeof("Invalid angle value.\r\n"), HAL_MAX_DELAY);
             return 4; // Invalid angle
@@ -129,7 +129,7 @@ uint8_t SerializePacket(const struct Packet *packet)
                  motorAngle.ID, motorAngle.angle, motorAngle.direction);
         HAL_UART_Transmit(&huart1, (uint8_t *)angle_msg, strlen(angle_msg), HAL_MAX_DELAY);
         
-        Motor_GotoAngle(30, 0);
+        Motor_GotoAngle(motorAngle.angle, motorAngle.direction);
         break;
     }
 

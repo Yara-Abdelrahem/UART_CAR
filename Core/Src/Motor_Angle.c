@@ -32,40 +32,10 @@ typedef struct
 static MotorCalibration motor1_calib;
 
 /* ==================== Encoder Functions ==================== */
-
-int16_t Encoder_GetAngle(TIM_HandleTypeDef *htim)
-{
-    int16_t signedCount = (int16_t)__HAL_TIM_GET_COUNTER(htim);
-    return ((float)signedCount / ENCODER_COUNTS_PER_REV) * 360.0f;
-}
-
 void Encoder_Init(TIM_HandleTypeDef *htim)
 {
     HAL_TIM_Encoder_Start(&htim3, TIM_CHANNEL_ALL); // Start encoder mode
     __HAL_TIM_SET_COUNTER(&htim3, 0);               // Reset to 0
-}
-void Encoder_ReadData(TIM_HandleTypeDef *htim, uint8_t motorID)
-{
-    static uint32_t lastTick = 0;
-
-    // Check if 100 ms passed
-    if (HAL_GetTick() - lastTick >= 100)
-    {
-        lastTick = HAL_GetTick();
-
-        int dirFlag = __HAL_TIM_IS_TIM_COUNTING_DOWN(htim) ? MOTOR_DIR_CCW : MOTOR_DIR_CW;
-        int16_t signedCount = __HAL_TIM_GET_COUNTER(htim);
-        int16_t angle = (signedCount / ENCODER_COUNTS_PER_REV) * 360.0f;
-
-        char msg[80];
-        snprintf(msg, sizeof(msg),
-                 "CNT=%" PRId32 ", Angle=%" PRId16 ", Dir=%s\r\n",
-                 signedCount,
-                 angle,
-                 (dirFlag == MOTOR_DIR_CW) ? "CW" : "CCW");
-
-        HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
-    }
 }
 
 void Motor_Print(const char *fmt, ...)
@@ -88,51 +58,33 @@ void Motor_Angle_Stop(void)
 }
 
 /**
- * Run motor with given speed (0–100%) and direction
- */
-void Motor_Run(uint8_t speed_percent, uint8_t direction)
-{
-    if (speed_percent > 100)
-        speed_percent = 100;
-
-    uint32_t arr = __HAL_TIM_GET_AUTORELOAD(&htim4);
-    uint32_t pwmValue = (arr * speed_percent) / 100;
-
-    HAL_GPIO_WritePin(MOTOR_DIR_PORT, MOTOR_DIR_PIN,
-                      (direction == MOTOR_DIR_CW) ? GPIO_PIN_SET : GPIO_PIN_RESET);
-
-    __HAL_TIM_SET_COMPARE(&htim4, MOTOR_PWM_CHANNEL, pwmValue);
-}
-
-/**
  * Drive motor until encoder = target position (basic P control)
  */
 
 void Motor_GotoEncoder(int32_t target, uint8_t direction)
 {
-    int sm=0;
+    int sm = 0;
     while (1)
     {
         int16_t raw = (int16_t)__HAL_TIM_GET_COUNTER(&htim3);
         int16_t current = (int16_t)raw;
 
-        int32_t error = current - target  ;
+        int32_t error = current - target;
 
         sm++;
-        if(sm %10==0) 
+        if (sm % 10 == 0)
         {
-          char msg[60];
-           snprintf(msg, sizeof(msg), "Target=%ld ,Current = %ld max : %d min :%d error : %d \r\n", target , current, motor1_calib.encoder_max , motor1_calib.encoder_min, error);
+            char msg[60];
+            snprintf(msg, sizeof(msg), "Target=%ld ,Current = %ld max : %d min :%d error : %d \r\n", target, current, motor1_calib.encoder_max, motor1_calib.encoder_min, error);
             HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
         }
         // Stop condition
         if (labs(error) <= 2) // tolerance = 10 counts
         {
-                        char msg[60];
+            char msg[60];
             snprintf(msg, sizeof(msg),
-             "Errroror tolerance Target=%ld , Current = %ld\r\n", 
-             target , current );
-
+                     "Errroror tolerance Target=%ld , Current = %ld\r\n",
+                     target, current);
 
             HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
 
@@ -140,13 +92,13 @@ void Motor_GotoEncoder(int32_t target, uint8_t direction)
 
             break;
         }
-        
-        if (target > motor1_calib.encoder_min || target < motor1_calib.encoder_max)  
+
+        if (target > motor1_calib.encoder_min || target < motor1_calib.encoder_max)
         {
             __HAL_TIM_SET_COMPARE(&htim4, MOTOR_PWM_CHANNEL, 0);
 
             char msg[60];
-            snprintf(msg, sizeof(msg), "Errroror Target=%d , max : %d min :%d Current = %ld\r\n", target , current, motor1_calib.encoder_max , motor1_calib.encoder_min);
+            snprintf(msg, sizeof(msg), "Errroror Target=%d , max : %d min :%d Current = %ld\r\n", target, current, motor1_calib.encoder_max, motor1_calib.encoder_min);
             HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
             break;
         }
@@ -154,22 +106,14 @@ void Motor_GotoEncoder(int32_t target, uint8_t direction)
         uint32_t arr = __HAL_TIM_GET_AUTORELOAD(&htim4);
 
         // Set motor direction
-        HAL_GPIO_WritePin(MOTOR_DIR_PORT, MOTOR_DIR_PIN,(direction == MOTOR_DIR_CW) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(MOTOR_DIR_PORT, MOTOR_DIR_PIN, (direction == MOTOR_DIR_CW) ? GPIO_PIN_SET : GPIO_PIN_RESET);
 
         // Apply PWM (for now fixed at 60%, you can switch to pwmValue)
-        __HAL_TIM_SET_COMPARE(&htim4, MOTOR_PWM_CHANNEL, arr * 0.2);
-              HAL_Delay(5);
-        Motor_Angle_Stop();
+        __HAL_TIM_SET_COMPARE(&htim4, MOTOR_PWM_CHANNEL, arr * 0.4f);
         HAL_Delay(5);
+        Motor_Angle_Stop();
+        HAL_Delay(15);
     }
-}
-
-void Debug_Encoder(void)
-{
-    int32_t cnt = __HAL_TIM_GET_COUNTER(&htim3);
-    char msg[40];
-    snprintf(msg, sizeof(msg), "ENC CNT = %ld\r\n", cnt);
-    HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
 }
 
 /* ==================== Calibration ==================== */
@@ -292,8 +236,32 @@ void Motor_GotoAngle(uint8_t angle_deg, uint8_t direction)
     int32_t cnt = (int32_t)raw;
 
     char msg[60];
-    snprintf(msg, sizeof(msg), "Angle sent =%ld  Target=%ld  Current=%ld\r\n",angle_deg ,  target, cnt);
+    snprintf(msg, sizeof(msg), "Angle sent =%ld  Target=%ld  Current=%ld\r\n", angle_deg, target, cnt);
     HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
 
     Motor_GotoEncoder(target, direction);
 }
+
+// void Encoder_ReadData(TIM_HandleTypeDef *htim, uint8_t motorID)
+// {
+//     static uint32_t lastTick = 0;
+
+//     // Check if 100 ms passed
+//     if (HAL_GetTick() - lastTick >= 100)
+//     {
+//         lastTick = HAL_GetTick();
+
+//         int dirFlag = __HAL_TIM_IS_TIM_COUNTING_DOWN(htim) ? MOTOR_DIR_CCW : MOTOR_DIR_CW;
+//         int16_t signedCount = __HAL_TIM_GET_COUNTER(htim);
+//         int16_t angle = (signedCount / ENCODER_COUNTS_PER_REV) * 360.0f;
+
+//         char msg[80];
+//         snprintf(msg, sizeof(msg),
+//                  "CNT=%" PRId32 ", Angle=%" PRId16 ", Dir=%s\r\n",
+//                  signedCount,
+//                  angle,
+//                  (dirFlag == MOTOR_DIR_CW) ? "CW" : "CCW");
+
+//         HAL_UART_Transmit(&huart1, (uint8_t *)msg, strlen(msg), HAL_MAX_DELAY);
+//     }
+// }
