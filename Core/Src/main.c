@@ -182,18 +182,20 @@ int main(void)
   MX_TIM5_Init();
   /* USER CODE BEGIN 2 */
 
-  // Initialize uart_log_printf with huart2
-  uart_log_init(&huart2);
-  uart_log_printf("STM32 Ready for Packets...\r\n");
+
 
   // Start the first UART receive IT
   // The first byte will be placed at rxBuffer[0]
-  HAL_UART_Receive_IT(&huart2, &rxBuffer[0], 1);
   Encoder_Init(&htim3);
   Motor_Init_Angle();
   Horn_Init();
   Light_Init();
   Motor_init();
+  
+    // Initialize uart_log_printf with huart2
+  uart_log_init(&huart2);
+  uart_log_printf("STM32 Ready for Packets...\r\n");
+  HAL_UART_Receive_IT(&huart2, &rxBuffer[0], 1);
 
   /* USER CODE END 2 */
 
@@ -261,7 +263,7 @@ int main(void)
       // After processing, restart reception for the next packet's first byte
       HAL_UART_Receive_IT(&huart2, &rxBuffer[0], 1);
     }
-    Encoder_ReadData(&htim3, 1);
+    // Encoder_ReadData(&htim3, 1);
     HAL_Delay(1);
   }
   /* USER CODE END 3 */
