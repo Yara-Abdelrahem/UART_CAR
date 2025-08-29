@@ -151,7 +151,7 @@ void Motor_Init_Angle(void)
         if (stableCounter > 50)
             break;
 
-        __HAL_TIM_SET_COMPARE(&htim4, MOTOR_PWM_CHANNEL, arr * 0.6f); // 40% duty
+        __HAL_TIM_SET_COMPARE(&htim4, MOTOR_PWM_CHANNEL, arr * 0.9f); // 40% duty
         HAL_Delay(10);
         Motor_Angle_Stop();
         HAL_Delay(20);
@@ -184,7 +184,7 @@ void Motor_Init_Angle(void)
         if (stableCounter > 50)
             break;
 
-        __HAL_TIM_SET_COMPARE(&htim4, MOTOR_PWM_CHANNEL, arr * 0.6f);
+        __HAL_TIM_SET_COMPARE(&htim4, MOTOR_PWM_CHANNEL, arr * 0.9f);
         HAL_Delay(10);
         Motor_Angle_Stop();
         HAL_Delay(20);
